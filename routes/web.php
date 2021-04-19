@@ -17,6 +17,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+/*Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
+})->name('dashboard');*/
+
+Route::get('Decano', function() {
+    return view('DashBoardDECANO.DashBoardDECANO');
+})->name('Decano');
+
+Route::get('DirectorEscuela', function() {
+    return view('DashBoardDIRECTORESCUELA.DashBoardDIRECTORESCUELA');
+})->name('DirectorEscuela');
+
+Route::middleware(['auth:sanctum','verificacionRoles'])->get('/dashboard', function () {
+    return "Hola...";
 })->name('dashboard');

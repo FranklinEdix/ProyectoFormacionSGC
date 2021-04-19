@@ -38,10 +38,14 @@
                     <div class="input-inform">
                         <select class="Roles">
                             <option hidden selected>Selecciona su rol</option>
-                            <option value="1">Uno</option>
-                            <option value="2">Dos</option>
-                            <option value="3">Tres</option>
+                            <option value="-DEC-">Decano</option>
+                            <option value="-DES-">Director de Escuela</option>
+                            <option value="-DOC-">Docente</option>
+                            <option value="-PRC-">Presidente de Comisión</option>
+                            <option value="-GEC-">Gestión de Calidad</option>
+                            <option value="-ELM-">El monge</option>
                         </select>
+
                         <x-jet-input id="password" class="block mt-1 w-full" type="email" placeholder="User..." name="email" :value="old('email')" required autofocus />
                         {{--<input type="text" name="email" id="name" placeholder="User..." />--}}
                         <x-jet-input id="password" class="block mt-1 w-full" type="password" placeholder="Password..." name="password" required autocomplete="current-password" />
