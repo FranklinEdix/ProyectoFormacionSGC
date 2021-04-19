@@ -19,7 +19,7 @@
                     <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         Nivelacion
                     </x-jet-nav-link>
-                    
+
                     <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         Enseñanza aprendizaje
                     </x-jet-nav-link>
