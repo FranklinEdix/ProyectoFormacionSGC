@@ -1,0 +1,162 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    background-image: url(../img/2.jpeg);
+    background-size: 100%;
+    background-repeat: none;    
+}
+.wrapper, 
+.container {
+    height: 525px;
+    width: 337px;
+}
+.wrapper {
+    margin: auto;
+    position: relative;
+    top: -10px; right: 0; bottom: 0; left: 0;
+}
+.container {
+    position: relative;
+}
+.container form {
+    position: absolute;
+    z-index: 20;
+    top: 180px;
+    left: -10px;
+}
+.container form:before,
+.container form:after,
+.container form .input-inform:before,
+.container form .title {
+    border-bottom: 1px solid #67e2fb;
+    padding-bottom: 3px;
+    margin: 15px 0 30px 0px;
+    width: 170px;
+}
+.container form label {
+    display: block;
+    color: #6b707d;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 26px;
+}
+.container form .input-inform:before {
+    width: 1px;
+    height: 396px;
+    left: -5px;
+    top: -102px;
+}
+.container form input:focus {
+    outline: none;
+}
+.container form label:last-child {
+    font-weight: bold;
+    color: #0050AA;
+    /*letter-spacing: 1px;*/
+    margin-top: 15px; 
+    font-size: 20px;
+}
+.container form input[type="text"],
+.container form input[type="password"] {
+    margin-top: 15px;
+    border: none;
+    border-bottom: 2px solid #f2f2f2;
+    display: block;
+    width: 180px;
+    color: #0050AA;
+}
+.container form input[type="text"] {
+    padding: 0 0 7px 9px;
+}
+.container form input[type="password"] {
+    padding: 5px 0 7px 9px;
+}
+.container form #forgot-pas,
+.container form .enter,
+.container form .enter label,
+.container form #enter {
+    cursor: pointer;
+    position: relative;
+}
+.container form #forgot-pas {
+    color: #0050AA;
+    background: #fff;
+    border-radius: 15px;
+    border: 1px solid #f2f2f2;
+    font-size: 12px;
+    height: 30px;
+    width: 170px;
+    top: 20px;
+    left: -2px;
+    transition: 500ms;
+}
+
+.container form #forgot-pas:hover{
+    background-color: #0050AA;
+    color: white;
+}
+
+.container form .enter {
+    width: 50px;
+    height: 50px;
+    top: 60px;
+    left: 180px;
+}
+.container form .enter label:before {
+    content: '\1F512';
+    color: rgba(197, 197, 197,0.6);
+    left: 10px;
+    top: 7px;
+    position: relative;
+}
+.container form .enter label:hover:before {
+    content: '\1F513';
+}
+.container form #enter {
+    color: #0050AA;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    font-size: 15px;
+    background: #fff;
+    transition: 500ms;
+}
+
+.container form #enter:hover{
+    background-color:transparent;
+    color: white;
+}
+
+.container form .input-inform select{
+    width: 98%;
+    margin: -8px 0px 10px 6px;
+    padding: auto;
+    background: transparent;
+    color: #0050AA;
+    font-size: 10pt;
+    border-radius: 5px;
+    border: 1px solid #0050AA;
+} 
+
+.wrapper{
+    /*padding: 0px 0px 0px 320px;*/
+    margin-left: 780px;
+    margin-top: -505px;
+}
+
+.col-md-5 img{
+    width: 400px;
+    height: 400px;
+    margin-top: 125px;
+    margin-left: 250px;
+    padding: 0px 0px 0px 0px;
+}
+
+.undac{
+    padding: 10px 0px 10px 0px;
+    background-color: rgb(0,0,150,.6);
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans';
+}
