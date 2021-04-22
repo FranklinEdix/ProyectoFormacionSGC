@@ -15,7 +15,7 @@
 <body>
         <!-- https://dribbble.com/shots/2358349-Daily-Shmaily-UI-1-Game-Login -->
         <!--<h1 class="undac">Universidad Nacional Daniel Alcides Carrión</h1>--> 
-        <x-jet-validation-errors class="alert mb-4" />
+        {{--<x-jet-validation-errors class="mb-4"/>--}}
         <div class="col-md-5">
             <img src="{{ asset('img/Capa 2.png') }}" alt="">
         </div>
@@ -30,26 +30,32 @@
                     </div>
                 @endif        
                 <form  action="{{ route('login') }}" method="POST">
-                    @csrf
                     <div class="title">
                         <label>¡Bienvenido!</label>
                         <label>Inicie sesión</label>
                     </div>
-                    <div class="input-inform">
-                        <select class="Roles">
+                    @csrf   
+                    <div class="input-inform" >
+                        {{--<select class="Roles">
                             <option hidden selected>Selecciona su rol</option>
-                            <option value="-DEC-">Decano</option>
-                            <option value="-DES-">Director de Escuela</option>
-                            <option value="-DOC-">Docente</option>
-                            <option value="-PRC-">Presidente de Comisión</option>
-                            <option value="-GEC-">Gestión de Calidad</option>
-                            <option value="-ELM-">El monge</option>
-                        </select>
+                            <option name="id-1" value="-DEC-">Decano</option>
+                            <option name="id-2" value="-DES-">Director de Escuela</option>
+                            <option name="id-3" value="-DOC-">Docente</option>
+                            <option name="id-4" value="-PRC-">Presidente de Comisión</option>
+                            <option name="id-5" value="-GEC-">Gestión de Calidad</option>
+                            <option name="id-6" value="-ELM-">El monge</option>
+                        </select>--}}
 
-                        <x-jet-input id="password" class="block mt-1 w-full" type="email" placeholder="User..." name="email" :value="old('email')" required autofocus />
+                        <x-jet-input id="password" class="block mt-1 w-full" type="email" placeholder="Usuario" name="email" :value="old('email')" required autofocus />
                         {{--<input type="text" name="email" id="name" placeholder="User..." />--}}
-                        <x-jet-input id="password" class="block mt-1 w-full" type="password" placeholder="Password..." name="password" required autocomplete="current-password" />
+                        <x-jet-input id="password" class="block mt-1 w-full" type="password" placeholder="Contraseña" name="password" required autocomplete="current-password" />
                         {{--<input type="password" name="password" id="password" placeholder="Password..." />--}}
+                        @error('email')
+                            <small>*{{$message}}</small>
+                        @enderror
+                        @error('password')
+                            <small>*{{$message}}</small>
+                        @enderror
                         <div class="flex items-center justify-end mt-4">
                             @if (Route::has('password.request'))
                                 <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }} " id="forgot-pas">
@@ -61,6 +67,7 @@
                     </div>
                     <div class="enter">
                         <x-jet-button class="ml-4" id="enter">
+                            {{--<i id="i"  class="icon ion-md-fastforward"></i>--}}
                             {{ __('Ingresar') }}
                         </x-jet-button>
                     </div>
@@ -71,7 +78,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script></body>
 </body>
-</html>{{--
+</html>
+{{--
 <x-guest-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">

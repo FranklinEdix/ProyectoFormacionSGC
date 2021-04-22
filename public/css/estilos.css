@@ -23,8 +23,8 @@ body {
 .container form {
     position: absolute;
     z-index: 20;
-    top: 180px;
-    left: -10px;
+    top: 210px;
+    left: -7px;
 }
 .container form:before,
 .container form:after,
@@ -58,16 +58,17 @@ body {
     margin-top: 15px; 
     font-size: 20px;
 }
-.container form input[type="text"],
+.container form input[type="email"],
 .container form input[type="password"] {
     margin-top: 15px;
     border: none;
+    border-radius: 15px;
     border-bottom: 2px solid #f2f2f2;
     display: block;
     width: 180px;
     color: #0050AA;
 }
-.container form input[type="text"] {
+.container form input[type="email"] {
     padding: 0 0 7px 9px;
 }
 .container form input[type="password"] {
@@ -86,7 +87,7 @@ body {
     font-size: 13px;
     height: 100px;
     width: 180px;
-    top: 10px;
+    top: 0px;
     left: -2px;
     transition: 500ms;
 }
@@ -103,8 +104,8 @@ body {
 .container form .enter {
     width: 50px;
     height: 50px;
-    top: 60px;
-    left: 150px;
+    top: 53px;
+    left: 145px;
 }
 .container form .enter label:before {
     content: '\1F512';
@@ -116,17 +117,29 @@ body {
 .container form .enter label:hover:before {
     content: '\1F513';
 }
+
 .container form #enter {
-    color: #fff;
+    color: #0050AA !important;
     border-radius: 18px;
     border: 2px solid #fff;
     font-size: 13px;
-    background: #0050AA;
+    background: #fff;
     transition: 500ms;
 }
 
+
+/*.container form .enter {
+    width: 0; 
+    height: 0; 
+    border-left: 100px solid #fff;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    transform: rotateX(45deg);
+}*/
+
 .container form #enter:hover{
-    padding: 20px;
+    background: transparent !important;
+    color: #fff !important;
 }
 
 .container form .input-inform select{
@@ -161,3 +174,12 @@ body {
     text-align: center;
     font-family: 'Open Sans';
 }
+
+/*.triangulo {
+    width: 0; 
+    height: 0; 
+    border-top: 80px solid #f0ad4e;
+    border-left: 75px solid transparent;
+    border-bottom: 85px solid transparent; 
+}   :''''''''''''''''''''''''''''''''''''''''''''''''''''''''v
+*/

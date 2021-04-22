@@ -56,10 +56,14 @@ class User extends Authenticatable
 
     /**
      * The accessors to append to the model's array form.
-     *
+     *  
      * @var array
      */
     protected $appends = [
         'profile_photo_url',
     ];
+
+    public function adminlte_image(){
+        return 'https://picsum.photos/id/237/200/300';
+    }
 }

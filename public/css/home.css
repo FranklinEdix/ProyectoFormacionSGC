@@ -1,0 +1,312 @@
+/*Ta que piña :v*/
+:root{
+    --primary: #0050AA ;
+    --light: #ffffff;
+    --grey: #efefef;
+}
+
+body{
+    font-weight: 300;
+    color: var(--primary);
+}
+
+body::-webkit-scrollbar {
+
+    width: 7px;
+    background: var(--grey);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(0, 80, 170, .7);
+    border-right: 2px solid rgb(0, 80, 170);
+    border-radius: 20px;
+}
+
+
+.bg-primary {
+    background-image: linear-gradient(rgba(0, 80, 170, .4), rgba(0, 80, 170, .4)),url(../../storage/img/descarga.jfif) !important;
+}
+
+#sidebar-container {
+    min-height: 100%;
+}
+
+#sidebar-container .logo {
+    padding: .875rem 1.25rem;
+}
+
+#sidebar-container .menu {
+    width: 15.5rem;
+}
+
+#navBar {
+    background:rgb(0, 80, 170);
+}
+
+#icon {
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+#optionsBar span {
+    font-size: 20px;
+    text-align: center;
+}
+
+.undac {
+    text-align: center;
+    margin: 10px 5px 0px 5px;
+    font-size: 15px;
+    color: var(--light);
+}
+
+.undacImg{
+    margin-left: 25%;
+}
+
+.userImg{
+    background-color: white;
+    padding: 1px;
+    border-radius: 100%;
+}
+
+.btn-search {
+    right: 8px;
+}
+
+.logo img {
+    margin: 30px 0px 30px 0px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+#optionsBar {
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    text-decoration: none;
+    transition: 500ms;
+    color: white;
+    border-radius: 40px 0px 0px 40px; 
+}
+
+#optionsBar:hover {
+    text-decoration: none;
+    background-color: white;
+    color: var(--primary);
+}
+
+#navbarDropdown1 {
+    display: none;
+}
+
+#content {
+    margin-top: 20px;
+}
+
+.col-lg-10 p {
+    margin-left: 25px;
+    color: black;
+}
+
+#IconFormacion {
+    margin: 10px 0px 0px 0px;
+    padding: none;
+}
+
+#targetas {
+    height: 60px;
+}
+
+#containerCards {
+    justify-content: center;
+}   
+
+#tamaño-cards {
+    margin: 0px -10px 0px -10px;
+}
+
+#trageta-1 {
+    color: var(--primary);
+    border-radius: 15px;
+    border: 2px solid var(--primary);
+    background-color: var(--ligth);
+    font-size: 12px;
+    transition: 800ms;
+}
+
+#trageta-1 {
+    margin: 20px 0px 0px 0px;
+}
+
+#trageta-1 .ver_mas{
+    margin: 7px 0px 0px 0px;
+    text-align: center;
+}
+
+#trageta-1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    color: white;
+    background-color: var(--primary)
+}
+
+#graficos {
+    margin-top: 20px;
+}
+
+#graficos h6 {
+    margin: 0px 0px 5px 40px;
+}
+
+#graficos h8 {
+    color: black;
+    margin: 0px 0px 50px 60px;    
+}
+
+#barras, #pastel {
+    background: var(--grey);
+    border: 2px solid var(--grey);
+}
+
+#barras {
+    margin: 20px 0px 0px 40px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px; 
+}
+
+#pastel {
+    margin: 20px 0px 0px 40px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 15px; 
+}
+
+#BotPdfReport{
+    margin: 10px 0px 10px 0px;
+}
+
+#pdfReporteGeneral {
+    text-align: center;
+    justify-content: center;
+}
+
+#verMas:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/*------------------Modo Responsive---------------*/
+@media (max-width: 991px){    
+    #optionBarOne {
+        margin: 10px;
+    }
+    
+    #navbarDropdown1 {
+        margin-top: 10px;
+        display:unset;
+    }
+
+    #navbarDropdown1 #iconToggle {
+        background-color: var(--light);
+        border: 2px solid white;
+        border-radius: 5px;
+        padding-left: 5px;
+    }
+
+    #optionsBar {
+        text-align: center;
+        padding: 20px 0px 20px 0px;
+        text-decoration: none;
+        transition: 500ms;
+        color: var(--primary);
+        border-radius: 0px 0px 0px 0px; 
+    }
+    
+    #optionsBar:hover {
+        text-decoration: none;
+        background-color: var(--primary);
+        color: white;
+    }
+    #sidebar-container {
+        display: none;
+    }
+
+    #toggler{
+        background-color: white;
+        color: white;
+        transition: 500ms;
+        border:2px solid white;
+    }
+    
+    #toggler:hover {
+        border:2px solid var(--grey);
+        background-color: var(--grey);
+    }
+    
+}
+
+@media (max-width: 1118px){
+    #icon {
+        margin-top: 30px;
+        font-size: 30px;
+    }
+    
+    .undacImg{
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 572px){
+    .undacImg{
+        margin-left: 0px;
+    }
+    .userImg{
+        background-color: white;
+        padding: 1px;
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+    }
+    #navbarDropdown1 #iconToggle {
+        background-color: var(--light);
+        border: 2px solid white;
+        border-radius: 5px;
+        padding-left: 5px;
+        width: 30px;
+        height: 30px;
+    }
+    #toggler {
+        background-color: white;
+        color: white;
+        transition: 500ms;
+        border:2px solid white;
+        width: 40px;
+        height: 40px;
+    }
+
+    #toggler span{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 433px){
+    .undacImg{
+        margin-left: 0px;
+        width: 35px;
+        height: 35px;
+    }
+    .undacImg2{
+        margin-left: 0px;
+        width: 35px;
+        height: 35px;
+    }
+    .undac {
+        text-align: center;
+        margin: 10px 5px 0px 5px;
+        font-size: 10px;
+        color: var(--light);
+    }
+}

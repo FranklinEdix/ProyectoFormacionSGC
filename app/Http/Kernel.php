@@ -65,3 +65,5 @@ class Kernel extends HttpKernel
         'verificacionRoles' =>  \App\Http\Middleware\VerificacionDeRoles::class,
     ];
 }
+
+    

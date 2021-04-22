@@ -13,22 +13,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Esta ruta te dirige a la ventana pricipal
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
+
+Route::middleware(['auth:sanctum'])->get('/Nivelacion/Principal', function () {
+    return view('Nivelacion.Principal');
+})->name('NivelacionPrincipal');
 
 /*Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');*/
 
-Route::get('Decano', function() {
+Route::middleware(['auth:sanctum'])->get('Decano', function() {
     return view('DashBoardDECANO.DashBoardDECANO');
 })->name('Decano');
 
-Route::get('DirectorEscuela', function() {
+Route::middleware(['auth:sanctum'])->get('DirectorEscuela', function() {
     return view('DashBoardDIRECTORESCUELA.DashBoardDIRECTORESCUELA');
 })->name('DirectorEscuela');
 
 Route::middleware(['auth:sanctum','verificacionRoles'])->get('/dashboard', function () {
-    return "Hola...";
+    return view('dashboard');
 })->name('dashboard');
