@@ -50,7 +50,7 @@
                             </div>                                    
                         </div>
                         <div class="ver_mas card-footer">
-                        <a href="dashboard/Nivelacion/Principal?variable=2" id="verMas" class="color" >Ver más <img  class="card__image icon_card icon-right"  src="https://image.flaticon.com/icons/png/512/189/189689.png" width="24" height="24" ></img></a>
+                        <a href="Nivelacion/Principal?variable=2" id="verMas" class="color" >Ver más <img  class="card__image icon_card icon-right"  src="https://image.flaticon.com/icons/png/512/189/189689.png" width="24" height="24" ></img></a>
                         </div>
                     </div>
                     </div>
@@ -67,7 +67,7 @@
                             </div>                                    
                         </div>
                         <div class="ver_mas card-footer">
-                         <a href="dashboard/Nivelacion/Ense-Aprendizaje" id="verMas" class="color" >Ver más <img  class="card__image icon_card icon-right"  src="https://image.flaticon.com/icons/png/512/189/189689.png" width="24" height="24" ></img></a>
+                         <a href="Nivelacion/Ense-Aprendizaje" id="verMas" class="color" >Ver más <img  class="card__image icon_card icon-right"  src="https://image.flaticon.com/icons/png/512/189/189689.png" width="24" height="24" ></img></a>
                         </div>
                     </div>
                     </div>
@@ -145,22 +145,25 @@
             </section>
             <section>
                 <div class="container div_container" id="graficos">
-                    <h4 class="bg"> &nbsp;Reporte General del Macroproceso Formación</h4>
-                    <a href=""><h8>Ver la resolución de la comisión y comisión de apoyo</h8></a>
+                    <h4 class="bg"> &nbsp;Guia del macroproceso formación</h4><br>
+                    <h5>Docuementación de procesos: </h5><br>
+                    {{--<p>
+                        El proceso PO02.01: Nivelación-Integrantes, forma parte del Sistema de Gestión de Calidad de la 
+                        Universidad Nacional Daniel Alcides Carrión, propietaria de los derechos de autor de este documento
+                        y que no debe ser usado para otro proposito distinta al que se destina.     
+                    </p>--}}
                     <div class="row">
-                        <div class="col-lg-5" id="barras">
-                            <canvas id="myChart" width="400" height="400"></canvas>
-                        </div>
-                        <div class="col-lg-5" id="pastel">
-                            <canvas id="myChart1" width="400" height="400"></canvas>
-                        </div>                 
+                        <div class="col-lg-12" id="pdf-1">
+                            <iframe src="https://drive.google.com/file/d/1jIVK5aCsjswmFfQv0Qj6MhadR96Vs6O6/preview" width="740" height="750"></iframe>                        </div>                 
                     </div>
-                
+               
+                    {{--
                     <div class="container" id="BotPdfReport">
                         <div class="" id="pdfReporteGeneral">
                             <button class="btn btn-success" ><i class="fas fa-file-pdf"></i> Ver reporte General</button>
                         </div>
-                    </div>
+                    </div>--}}
+
                 </div>
             </section>
         </div>
@@ -169,17 +172,18 @@
 @stop
 
 @section('css')
-<link rel="stylesheet" href="/css/fondos_bordes.css">
+    <link rel="stylesheet" href="/css/fondos_bordes.css">
     <link rel="stylesheet" href="/css/admin_custom.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/homeSub.css') }}">
 @stop
 
 @section('js')
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script> console.log('Hi!'); </script>
-    <script src="js/graficoDeBarras.js"></script>
-    <script src="js/graficoPastel.js"></script>
+    <script src="{{ asset('js/graficoDeBarrasNivelacion.js') }}"></script>
+    <script src="{{ asset('js/graficoPastelNivelacion.js') }}"></script>
 @stop

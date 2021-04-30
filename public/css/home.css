@@ -128,7 +128,7 @@ body::-webkit-scrollbar-thumb {
 
 #trageta-1 {
     color: var(--primary);
-    border-radius: 15px;
+    border-radius: 5px;
     border: 2px solid var(--primary);
     background-color: var(--ligth);
     font-size: 12px;
@@ -155,8 +155,12 @@ body::-webkit-scrollbar-thumb {
     margin-top: 20px;
 }
 
-#graficos h6 {
+#graficos h5 {
     margin: 0px 0px 5px 40px;
+}
+
+#graficos h6 {
+    margin: 0px 0px 5px 100px;
 }
 
 #graficos h8 {
@@ -170,10 +174,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 #barras {
-    margin: 20px 0px 0px 40px;
+    margin: 20px 0px 0px 60px;
     justify-content: center;
     text-align: center;
-    border-radius: 15px; 
+    border-radius: 5px; 
 }
 
 #pastel {

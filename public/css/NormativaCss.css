@@ -1,0 +1,15 @@
+select{ 
+    width: 20%;
+    margin: -8px 0px 10px 6px;
+    padding: auto;
+    background: transparent;
+    color: #0050AA;
+    font-size: 10pt;
+    border-radius: 5px;
+    border: 1px solid #0050AA;
+} 
+#DocTablas{
+    border-radius: 15px;
+    margin: 10px 0px 20px 100px;
+    background: var(--grey);
+}

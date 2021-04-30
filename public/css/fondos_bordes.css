@@ -1,0 +1,44 @@
+.parraf_formacion{
+    color: #000;
+    
+}
+.cent{
+    text-align: center;
+}
+.colors{
+    background-color: #343a40;
+    border-radius: 10px; 
+}
+table th{
+    color: #fff;
+}
+
+
+table td{
+    background-color: rgb(255, 255, 255);
+}
+.div_container{
+    border:3px solid #343a40;
+    border-top:30px solid #343a40 ;
+
+}
+.bg{
+    height: 30px;
+    color: #fff;
+    font-size:18px;
+    margin-top:-29px;
+ 
+   
+}
+
+.bg_filtro{
+    text-align:center;
+    background: #f3f3f3;
+    box-shadow: 2px 2px 5px #999;
+}
+
+.bg_procesos{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,78 @@
+#pdf-1{
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+#BuscarDocumentacion {
+    margin: 10px 0px 10px 40px;
+}
+
+#Crear {
+    margin: 10px 0px 10px 0px;    
+}
+#DocTablas{
+    border-radius: 15px;
+    margin: 10px 0px 20px 100px;
+    background: var(--grey);
+}
+
+.table tbody{
+    text-align: center;
+    color: black !important;
+}
+
+#pills-home-tab,
+#pills-profile-tab,
+#pills-contact-tab,
+#pills-SegEs-tab,
+#pills-MovAc-tab,
+#pills-AcExt-tab,
+#pills-SegEg-tab
+{
+    margin-top: 10px;
+    margin-left: 5px;
+    text-align: center;
+    transition: 500ms;
+    padding: 15px;
+    border-radius: 15px;
+} 
+
+#pills-home-tab:hover,
+#pills-profile-tab:hover,
+#pills-contact-tab:hover,
+#pills-SegEs-tab:hover,
+#pills-MovAc-tab:hover,
+#pills-AcExt-tab:hover,
+#pills-SegEg-tab:hover
+{
+    background-color: #007bff;
+    color: white; 
+    border-radius: 15px;
+} 
+
+#SelecPeriodo{
+    margin: 10px 0px 10px 40px;
+}
+
+#tablaInd{
+    margin: 5px 0px 10px 40px;
+    padding: 10px;    
+    border-radius: 15px 0px 0px 15px;
+    background: var(--grey);
+}
+
+#graficoBarrasIndicadores{
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 0px 15px 15px 0px;
+    background: var(--grey);
+}
+
+.graficoBarrasIndicadores{
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 15px;
+    background: var(--grey);
+    border: 2px solid white;
+}

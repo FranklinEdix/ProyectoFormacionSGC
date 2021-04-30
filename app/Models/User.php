@@ -66,4 +66,18 @@ class User extends Authenticatable
     public function adminlte_image(){
         return 'https://picsum.photos/id/237/200/300';
     }
+
+    public function adminlte_desc(){
+
+        if(auth()->user() -> Id_Rol=='1'){
+            return 'SISTEMA DE GESTIÓN DE CALIDAD';
+        }
+        if(auth()->user() -> Id_Rol=='2'){
+            return 'DIRECTOR DE ...';
+        }
+        if(auth()->user() -> Id_Rol=='3'){
+            return 'DECANO DE ...';
+        }
+        return '? FALTAN DATOS';
+    }
 }

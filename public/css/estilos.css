@@ -142,7 +142,9 @@ body {
     color: #fff !important;
 }
 
-.container form .input-inform select{
+/*Roles...*/
+
+.container form .input-inform select{ 
     width: 98%;
     margin: -8px 0px 10px 6px;
     padding: auto;
@@ -152,6 +154,8 @@ body {
     border-radius: 5px;
     border: 1px solid #0050AA;
 } 
+
+/*--------------*/
 
 .wrapper{
     /*padding: 0px 0px 0px 320px;*/
@@ -182,4 +186,16 @@ body {
     border-left: 75px solid transparent;
     border-bottom: 85px solid transparent; 
 }   :''''''''''''''''''''''''''''''''''''''''''''''''''''''''v
-*/
+*/<section>
+                <div class="container" id="graficos">
+                    <h6>Reeporte General del Macroproceso Formación</h6>
+                    <a href=""><h8>Ver la resolución de la comisión y comisión de apoyo</h8></a>
+                    <div class="row">
+                        <div class="col-lg-5" id="barras">
+                            <canvas id="myChart" width="400" height="400"></canvas>
+                        </div>
+                        <div class="col-lg-5" id="pastel">
+                            <canvas id="myChart1" width="400" height="400"></canvas>
+                        </div>                 
+                    </div>
+                </div>
