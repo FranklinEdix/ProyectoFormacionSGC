@@ -1,6 +1,6 @@
-/*Ta que piña :v*/
+s/*Ta que piña :v*/
 :root{
-    --primary: #0050AA ;
+    --primary: #004fa8 ;
     --light: #ffffff;
     --grey: #efefef;
 }
@@ -24,16 +24,21 @@ body::-webkit-scrollbar-thumb {
 
 
 .bg-primary {
-    background-image: linear-gradient(rgba(0, 80, 170, .4), rgba(0, 80, 170, .4)),url(../../storage/img/descarga.jfif) !important;
+    background: rgba(0, 80, 170) !important;
 }
 
 #sidebar-container {
+    background:rgb(0, 80, 170);
     min-height: 100%;
 }
 
 #sidebar-container .logo {
     padding: .875rem 1.25rem;
 }
+
+#SGC{
+    margin-top: 100%;
+}    
 
 #sidebar-container .menu {
     width: 15.5rem;
@@ -51,6 +56,24 @@ body::-webkit-scrollbar-thumb {
 #optionsBar span {
     font-size: 20px;
     text-align: center;
+}
+
+#AccesosDirectos{
+    margin: 0px 10px 10px 10px;
+    border: 2px solid rgb(192, 192, 192);
+    border-radius: 15px;
+}
+
+#AccesoNormas{
+    margin: 10px 10px 10px 10px;
+    /*border: 2px solid rgba(233, 21, 21, 0.836);*/
+}
+#contenidoNorma{
+    float:left;
+}
+#ConNormas{
+    height: auto;
+    width:  auto;
 }
 
 .undac {
@@ -118,6 +141,16 @@ body::-webkit-scrollbar-thumb {
     height: 60px;
 }
 
+.card-title {
+    float: none !important;
+    font-size: none !important;
+    font-weight: 400;
+    margin: 0px 0px 10px 0px !important;
+    margin-bottom: 0px;
+}
+#bg_card{
+    background-color: #343a40;
+}
 #containerCards {
     justify-content: center;
 }   
@@ -126,29 +159,93 @@ body::-webkit-scrollbar-thumb {
     margin: 0px -10px 0px -10px;
 }
 
-#trageta-1 {
+/* estilos para las targetas */
+
+#trageta-1,
+#trageta-2,
+#trageta-3,
+#trageta-4,
+#trageta-5,
+#trageta-6 {
     color: var(--primary);
     border-radius: 5px;
     border: 2px solid var(--primary);
     background-color: var(--ligth);
-    font-size: 12px;
+    font-size: 13px;
     transition: 800ms;
 }
 
-#trageta-1 {
+#trageta-1,
+#trageta-2,
+#trageta-3,
+#trageta-4,
+#trageta-5,
+#trageta-6 {
     margin: 20px 0px 0px 0px;
 }
 
-#trageta-1 .ver_mas{
+#trageta-1 .ver_mas,
+#trageta-2 .ver_mas,
+#trageta-3 .ver_mas,
+#trageta-4 .ver_mas,
+#trageta-5 .ver_mas,
+#trageta-6 .ver_mas {
     margin: 7px 0px 0px 0px;
     text-align: center;
 }
 
-#trageta-1:hover {
+#trageta-1:hover,
+#trageta-2:hover,
+#trageta-3:hover,
+#trageta-4:hover,
+#trageta-5:hover,
+#trageta-6:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
     color: white;
     background-color: var(--primary)
+}
+
+/*---------------------------------------------*/
+
+#VolverPrincipal{
+    padding: 7px;
+    margin: 0px 920px 10px 17px;
+    transition: 500ms;
+}
+
+#VolverPrincipal svg{
+    margin-top: -3px;
+    color: var(--primary);
+}
+
+#VolverPrincipal a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+#VolverPrincipal:hover{
+    color: white !important;
+    border-radius: 10px;
+    background-color: var(--primary);    
+}
+
+
+#VolverPrincipal:hover a{
+    color: white !important;
+}
+
+#VolverPrincipal:hover svg{
+    color: white !important;
+}
+
+#nav-tabContent{
+    background-color: var(--light);
+    border: 1px solid var(--grey);
+    border-top: none;
+    margin: 0px 0px 10px 0px;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2)
 }
 
 #graficos {
@@ -179,7 +276,7 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     border-radius: 5px; 
 }
-
+    
 #pastel {
     margin: 20px 0px 0px 40px;
     text-align: center;
@@ -200,6 +297,14 @@ body::-webkit-scrollbar-thumb {
     color: white;
     text-decoration: none;
 }
+
+#font{
+    background-image: url(../img/Rectángulo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
 
 /*------------------Modo Responsive---------------*/
 @media (max-width: 991px){    

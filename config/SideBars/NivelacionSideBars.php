@@ -231,7 +231,7 @@ class MenuNivelacionSideBars{
                 [
                     'text'       => 'Principal',
                     'icon'       => 'fas fa-home',
-                    'url'        => '#',
+                    'url'        => 'Nivelacion/Principal?variable=2',
                     'can'        => ''
                 ],
                 [

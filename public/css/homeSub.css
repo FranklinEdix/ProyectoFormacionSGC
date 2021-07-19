@@ -5,12 +5,9 @@
 }
 
 #BuscarDocumentacion {
-    margin: 10px 0px 10px 40px;
+    margin: 10px 0px 10px 100px;
 }
 
-#Crear {
-    margin: 10px 0px 10px 0px;    
-}
 #DocTablas{
     border-radius: 15px;
     margin: 10px 0px 20px 100px;
@@ -48,9 +45,10 @@
 {
     background-color: #007bff;
     color: white; 
-    border-radius: 15px;
+    border-radius: 2px;
 } 
 
+        
 #SelecPeriodo{
     margin: 10px 0px 10px 40px;
 }
@@ -70,9 +68,135 @@
 }
 
 .graficoBarrasIndicadores{
-    margin-top: 5px;
+    margin: 0px 0px 0px 20px; 
     padding: 10px;
     border-radius: 15px;
     background: var(--grey);
     border: 2px solid white;
+}
+
+.circulo {
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: red;
+    /*background: #5cb85c;*/
+}
+
+.circulo1 {
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: orange;
+    /*background: #5cb85c;*/
+}
+
+.circulo2 {
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: green;
+    /*background: #5cb85c;*/
+}
+
+#IndicadorDoc{
+    text-align: center;
+    padding: 15px 0px 0px 10px;
+    margin: 10px;
+    background-color: var(--light);
+    color: black;
+    font-weight: bold;
+    margin: 0px 0px 0px 5px;
+    border-radius: 5px !important;
+    font-size: 12px !important;
+    /*transform: translateY(-8px) !important;*/
+    box-shadow: 0px 0px 2px 2px rgba(15, 18, 59, 0.2) !important;
+}
+
+#IndicadorDoc p{
+    margin: 0px 0px 10px -8px;
+}
+
+#headIndicacores{
+    margin: 0px 0px 0px 0px;
+}
+
+#EstadoIndTittle{
+    color: var(--light);
+    margin: 0px 155px 0px 780px;
+}
+
+
+#IndicadorRojo,
+#IndicadorNaranja,
+#IndicadorVerde {
+    margin: 0px 0px 0px 15px;
+}
+
+
+#headDoc {
+    margin: 0px 0px 0px 90px;
+}
+
+#EstadoDocTittle{
+    color: var(--light);  
+    font-weight: bold;
+    margin: -40px 140px 0px 803px;
+}
+
+#Estado {
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(30, 30, 30);
+    font-size: 20px;
+}
+
+#mytable tr td{
+    font-size: 15px;
+}
+
+#Tittle {
+    padding: 8px;
+    margin: 0px 0px 10px 0px;
+    /*border: 2px solid var(--primary);*/
+    background-color: rgb(124, 124, 124);/*#55545B*/
+    border-radius:2px;
+    box-shadow: 0px 0px 3px 3px rgba(15, 18, 59, 0.2) !important;
+}
+
+#Tittle h3{
+    margin: 0px 0px 0px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--light);
+}
+
+
+#Filtro2{
+    margin: 0px 0px 0px 80px;
+}
+
+#pills-tabContent{
+    padding: 20px;
+    background-color: var(--light);
+    border-radius: 15px !important;
+    /*transform: translateY(-8px) !important;*/
+    box-shadow: 0px 0px 7px 7px rgba(15, 18, 59, 0.2) !important;
+}
+
+#dropdownMenuButton{
+    border: 2px solid rgb(124, 124, 124);;
+    background-color: rgb(124, 124, 124) !important;
+    box-shadow: 0px 0px 3px 3px rgba(15, 18, 59, 0.2) !important;    
+}
+
+#selecPerido{
+    margin: -80px 0px 55px 40px;
 }

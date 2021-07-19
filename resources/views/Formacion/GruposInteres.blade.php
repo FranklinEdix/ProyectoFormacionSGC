@@ -35,115 +35,7 @@
             </div>
             </section>
                 <!-- las targetas como opciones --->
-            <section>
-            <div class="container text-center c-center">
-                <div class="row" id="containerCards">
-                <div class="col-sm-2" id="tamaño-cards">
-                    <div class="card mb-4 margen" style="max-width: 14rem;" id="trageta-1">
-                    <div class="card-header text-center" id="targetas">Nivelación
-                        </div>
-                            <div class="card-body">
-                                <h4 class="card-title"><?php echo(40)?>%</h4>
-                                <div class="progress tamaño" >
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo(40)?>%;"></div>
-                                </div>
-                                <div>
-                            </div>                                    
-                        </div>
-                        <div class="ver_mas card-footer">
-                        <a href="Nivelacion/Principal?variable=2" id="verMas" class="color" >Ver más <img  class="card__image icon_card icon-right"  src="https://image.flaticon.com/icons/png/512/189/189689.png" width="24" height="24" ></img></a>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-sm-2" id="tamaño-cards">
-                    <div class="card mb-4 margen " style="max-width: 14rem;" id="trageta-1">
-                    <div class="card-header text-center" id="targetas">Enseñanza Aprendizaje
-                        </div>
-                            <div class="card-body">
-                                <h4 class="card-title"><?php echo(30)?>%</h4>
-                                <div class="progress tamaño" >
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo(30)?>%;"></div>
-                                </div>
-                                <div>
-                            </div>                                    
-                        </div>
-                        <div class="ver_mas card-footer">
-                         <a href="dashboard/Nivelacion/Ense-Aprendizaje" id="verMas" class="color" >Ver más <img  class="card__image icon_card icon-right"  src="https://image.flaticon.com/icons/png/512/189/189689.png" width="24" height="24" ></img></a>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-sm-2" id="tamaño-cards">
-                    <div class="card mb-4 margen " style="max-width: 14rem;" id="trageta-1">
-                    <div class="card-header text-center" id="targetas">Seguimiento Estudiante
-                        </div>
-                            <div class="card-body">
-                                <h4 class="card-title"><?php echo(30)?>%</h4>
-                                <div class="progress tamaño" >
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo(30)?>%;"></div>
-                                </div>
-                                <div>
-                            </div>                                    
-                        </div>
-                        <div class="ver_mas card-footer">
-                        Ver más <a href="#" class="color" ><img  class="card__image icon_card icon-right"  src="https://image.flaticon.com/icons/png/512/189/189689.png" width="24" height="24" ></img></a>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-sm-2" id="tamaño-cards">
-                    <div class="card mb-4 margen " style="max-width: 14rem;" id="trageta-1">
-                    <div class="card-header text-center" id="targetas">Movilidad Académica
-                        </div>
-                            <div class="card-body">
-                                <h4 class="card-title"><?php echo(30)?>%</h4>
-                                <div class="progress tamaño" >
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo(30)?>%;"></div>
-                                </div>
-                                <div>
-                            </div>                                    
-                        </div>
-                        <div class="ver_mas card-footer">
-                        Ver más <a href="#" class="color" ><img  class="card__image icon_card icon-right"  src="https://image.flaticon.com/icons/png/512/189/189689.png" width="24" height="24" ></img></a>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-sm-2" id="tamaño-cards">
-                    <div class="card mb-4 margen " style="max-width: 14rem;" id="trageta-1">
-                    <div class="card-header text-center" id="targetas">Actividades Extracurriculares
-                        </div>
-                            <div class="card-body">
-                                <h4 class="card-title"><?php echo(30)?>%</h4>
-                                <div class="progress tamaño" >
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo(30)?>%;"></div>
-                                </div>
-                                <div>
-                            </div>                                    
-                        </div>
-                        <div class="ver_mas card-footer">
-                        Ver más <a href="#" class="color" ><img  class="card__image icon_card icon-right"  src="https://image.flaticon.com/icons/png/512/189/189689.png" width="24" height="24" ></img></a>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-sm-2" id="tamaño-cards">
-                    <div class="card mb-4 margen " style="max-width: 14rem;" id="trageta-1">
-                    <div class="card-header text-center" id="targetas">Seguimiento Egresados
-                        </div>
-                            <div class="card-body">
-                                <h4 class="card-title"><?php echo(30)?>%</h4>
-                                <div class="progress tamaño" >
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo(30)?>%;"></div>
-                                </div>
-                                <div>
-                            </div>                                    
-                        </div>
-                        <div class="ver_mas card-footer">
-                        Ver más <a href="#" class="color" ><img  class="card__image icon_card icon-right"  src="https://image.flaticon.com/icons/png/512/189/189689.png" width="24" height="24" ></img></a>
-                        </div>
-                    </div>
-                    </div>                
-                </div>
-                </div>
-            </div>
-            </section>
+                @include('layouts.Targets')
             <section>
                 <div class="container div_container" id="graficos">
                 
@@ -151,20 +43,20 @@
                     <h5 class="parraf_formacion">Las partes interesadas implicadas en el desarrollo del macroproceso Formación se detalla en los siguientes cuadros:</h5>
                     <br>
                 
-                <div  class="row" style="text-align:center">
-                <center>
+                    <div  class="row" style="text-align:center">
+                    <center>
                     <div class="col-lg-8 " id="barras" >
-                    <table class=" table-bordered colors" >
+                    <table class="table100 table-bordered colors" >
                             <thead  > 
                             
-                                <tr class="fond_color" > <th  colspan="5"> <h4>PO02 FORMACIÓN </h4></th> </tr>
+                                <tr class=" table100-head fond_color tamaño_head"  > <th  colspan="5"> <h4>PO02 FORMACIÓN </h4></th> </tr>
                                
-                              <tr>
+                              <tr class="table100-head tamaño_head">
                                 <th scope="col">Proveedor</th>
                                 <th scope="col">Entradas</th>
                                 <th scope="col">Procesos</th>
                                 <th scope="col">Salidas</th>
-                                <th scope="col">Cliente</th>
+                                <th scope="col5">Cliente</th>
                               </tr>
                             </thead>
                             <tbody class="parraf_formacion cent"  >
@@ -191,7 +83,7 @@
                                     <td rowspan="3" style="vertical-align:middle;" >Sumilla de la asignaturas</td>
                                     <td rowspan="3" style="vertical-align:middle;" >PO02.02: Enseñanza - Aprendizaje</td>
                                     <td scope="col" style="vertical-align:middle;" >Registros de evaluacion del aprendizaje</td>
-                                    <td rowspan="3" style="vertical-align:middle;" >Escuela de formacion profesional</td>
+                                    <td rowspan="3" style="vertical-align:middle;" >Escuela de formacion profesional&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                 </tr>
                                 <tr>
                                     <td scope="col">Informe semestral de evaluacion E-A</td>  

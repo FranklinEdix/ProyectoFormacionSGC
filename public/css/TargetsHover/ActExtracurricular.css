@@ -1,0 +1,10 @@
+#trageta-5 {
+    margin: 20px 0px 0px 0px;
+    border-radius: 5px !important;
+    border: 2px solid var(--primary) !important;
+    font-size: 12px !important;
+    transform: translateY(-8px) !important;
+    box-shadow: 0 12px 16px rgba(15, 18, 59, 0.2) !important;
+    color: white !important;
+    background-color: var(--primary) !important;
+}

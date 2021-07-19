@@ -230,152 +230,55 @@
                             'search' => true,
                             'topnav' => true,
                         ],
-            
                         [
-                            'text' => 'blog',
-                            'url'  => 'admin/blog',
-                            'can'  => 'manage-blog',
+                            'text'       => 'Reportes',
+                            'icon'       => 'fas fa-file-contract',
+                            'url'        => '/dashboardFormacion?variable=1',
+                            'can'        => ''
                         ],
+                        [
+                            'text'       => 'Guia Rapida',
+                            'icon'       => 'fas fa-book-open',
+                            'url'        => '/dashboard/GuiaRapida?variable=1',
+                            'can'        => ''
             
-                        /*
-                    [
-                        'text' => 'dashboard',
-                        'route' => 'dashboard',
-                    ],
-                    */
-                        /*[
-                        'text'        => 'pages',
-                        'url'         => 'admin/pages',
-                        'icon'        => 'far fa-fw fa-file',
-                        'label'       => 4,
-                        'label_color' => 'success',
-                        'can'    => 'Decano'
-                    ],
-                    ['header' => 'account_settings',
-                    'can'    => 'Decano'],
-                    [
-                        'text' => 'profile',
-                        'url'  => 'admin/settings',
-                        'icon' => 'fas fa-fw fa-user',
-                        'can'    => 'Decano'
-                    ],
-                    [
-                        'text' => 'change_password',
-                        'url'  => 'admin/settings',
-                        'icon' => 'fas fa-fw fa-lock',
-                        'can'    => 'Decano'
-                    ],
-                    [
-                        'text'    => 'multilevel',
-                        'icon'    => 'fas fa-fw fa-share',
-                        'submenu' => [
-                            [
-                                'text' => 'level_one',
-                                'url'  => '#',
-                            ],
-                            [
-                                'text'    => 'level_one',
-                                'url'     => '#',
-                                'submenu' => [
-                                    [
-                                        'text' => 'level_two',
-                                        'url'  => '#',
-                                    ],
-                                    [
-                                        'text'    => 'level_two',
-                                        'url'     => '#',
-                                        'submenu' => [
-                                            [
-                                                'text' => 'level_three',
-                                                'url'  => '#',
-                                            ],
-                                            [
-                                                'text' => 'level_three',
-                                                'url'  => '#',
-                                            ],
-                                        ],
-                                    ],
-                                ],
-                            ],
-                            [
-                                'text' => 'level_one',
-                                'url'  => '#',
-                            ],
                         ],
-                        'can'    => 'Decano'
-                    ],
-                    ['header' => 'labels',        
-                    'can'    => 'Decano'],
-                    'header' => 'labels',]*/
-            
-                    [
-                        'text'       => 'Reportes',
-                        'icon'       => 'fas fa-file-contract',
-                        'url'        => '/dashboard',
-                        'can'        => 'dashboard'
-                    ],
-                    [
-                        'text'       => 'Guia Rapida',
-                        'icon'       => 'fas fa-book-open',
-                        'url'        => '/dashboard/GuiaRapida',
-                        'can'        => 'dashboard'
-        
-                    ],
-                    [
-                        'text'       => 'Grupos de Interes',
-                        'icon'       => 'fas fa-users',
-                        'url'        => '/dashboard/GruposInteres',
-                        'can'        => 'dashboard'
-                    ],
-                    [
-                        'text'       => 'Diagramas de Flujo',
-                        'icon'       => 'fas fa-chart-bar',
-                        'url'        => '/dashboard/Procesos',
-                        'can'        => 'dashboard'
-                    ],
-                    [
-                        'text'       => 'Normativa',
-                        'icon'       => 'fas fa-balance-scale',
-                        'url'        => '/dashboard/Normativa',
-                        'can'        => 'dashboard'
-                    ],
-                    [
-                        'text'       => 'Documentacion',
-                        'icon'       => 'fas fa-file-alt',
-                        'url'        => '/dashboard/Documentacion',
-                        'can'        => 'dashboard'
-                    ],
-                    [
-                        'text'       => 'Indicadores',
-                        'icon'       => 'fas fa-list-alt',
-                        'url'        => '/dashboard/Indicadores',
-                        'can'        => 'dashboard'
-                    ],
-                    [
-                        'text'       => 'Principal',
-                        'icon'       => 'fas fa-file-alt',
-                        'url'        => '#',
-                        'can'        => 'dashboard.NivelacionPrincipal'
-                    ],
-                    [
-                        'text'       => 'Planeación',
-                        'icon'       => 'fas fa-file-alt',
-                        'url'        => '#',
-                        'can'        => 'dashboard.NivelacionPrincipal'
-                    ],
-                    [
-                        'text'       => 'Ejecución',
-                        'icon'       => 'fas fa-file-alt',
-                        'url'        => '#',
-                        'can'        => 'dashboard.NivelacionPrincipal'
-                    ],
-                    [
-                        'text'       => 'Evaluación',
-                        'icon'       => 'fas fa-file-alt',
-                        'url'        => '#',
-                        'can'        => 'dashboard.NivelacionPrincipal'
-                    ],
-            
+                        [
+                            'text'       => 'Grupos de Interes',
+                            'icon'       => 'fas fa-users',
+                            'url'        => '/dashboard/GruposInteres?variable=1',
+                            'can'        => ''
+                        ],
+                        [
+                            'text'       => 'Diagramas de Flujo',
+                            'icon'       => 'fas fa-chart-bar',
+                            'url'        => '/dashboard/Procesos?variable=1',
+                            'can'        => ''
+                        ],
+                        [
+                            'text'       => 'Normativa',
+                            'icon'       => 'fas fa-balance-scale',
+                            'url'        => '/dashboard/Normativa?variable=1',
+                            'can'        => ''
+                        ],
+                        [
+                            'text'       => 'Documentacion',
+                            'icon'       => 'fas fa-file-alt',
+                            'url'        => '/dashboard/Documentacion?variable=1',
+                            'can'        => ''
+                        ],
+                        [
+                            'text'       => 'Indicadores',
+                            'icon'       => 'fas fa-list-alt',
+                            'url'        => '/dashboard/Indicadores?variable=1',
+                            'can'        => ''
+                        ],
+                        [
+                            'text'       => 'Subir Evidencia',
+                            'icon'       => 'fas fa-list-alt',
+                            'url'        => '/dashboard/SubirEvidencia?variable=1',
+                            'can'        => ''
+                        ],
                     ],
             
                     /*

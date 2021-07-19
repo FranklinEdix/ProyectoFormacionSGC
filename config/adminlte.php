@@ -1,9 +1,14 @@
 <?php
 use SideBars\NivelacionSideBars;
-use SideBars\MFormacionSideBars;
-//require("SideBars/NivelacionSideBars.php");
-//RECIBIR VALOR POR NOSE DONDE.......ERA POR GET XDDD
-$variable = 1;
+use SideBars\MFormacionSidebars;
+use SideBars\ActividadExtraCurricularBar;
+use SideBars\EnseñanzaApSideBars;
+use SideBars\SeguimientoEstudianteBars;
+use SideBars\SeguimientoEgresado;
+
+
+
+$variable = 0;
 if (!empty($_GET['variable'])) {
     $variable = $_GET['variable'];
 }
@@ -13,13 +18,165 @@ if ($variable == 1) { //CARGAR MENU DASHBOARD FORMACION
     return $mMF->menu();
 }
 
-//***********************************************MENU PARA FORMACION/NIVELACION*********************************************************************************** */
 if ($variable == 2) { //MENU PARA FORMACION/NIVELACION
     $mN = new MenuNivelacionSideBars();
     return $mN->menu();
 }
+if ($variable == 3) { //MENU PARA FORMACION/EnseñanazaAprendizaje
+    $mN = new MenuEnseñanzaApSideBars();
+    return $mN->menu();
+}
 
-if (!isset($variable)) { //CARGAR MENU DASHBOARD FORMACION
+if ($variable == 4) { //MENU PARA VENTANA PRINCIPAL
+    $mN = new MenuEnseñanzaApSideBars();
+    return $mN->menu();
+}
+
+if ($variable == 5) { //MENU PARA FORMACION/SEGUIMIENTO-ESTUDIANTE
+    $mN = new MenuSeguimientoEstudianteBar();
+    return $mN->menu();
+}
+
+if ($variable == 6) { //MENU PARA FORMACION/MOBILIDAD-ACADEMICA
+    $mN = new MenuMovilidadAcademicaBar();
+    return $mN->menu();
+}
+
+if ($variable == 7) { //MENU PARA FORMACION/ACTIVIDAD-EXTRACURRICULAR
+    $mN = new MenuActividadExtraCurricularBar();
+    return $mN->menu();
+}
+
+if ($variable == 8) { //MENU PARA FORMACION/SEGUIMIENTO-EGRESADO
+    $mN = new MenuSeguimientoEgresadoBar();
+    return $mN->menu();
+}
+
+if ($variable == 9) { //MENU PARA DIRECTOR/FORMACIÓN-PRINCIPAL
+    $mN = new FormacionDirectorPrincipal();
+    return $mN->menu();
+}
+
+if ($variable == 10) { //MENU PARA DIRECTOR/FORMACIÓN-NIVELACION
+    $mN = new FormacionDirector();
+    return $mN->menu();
+}
+
+if ($variable == 11) { //MENU PARA DIRECTOR/FORMACIÓN-ENSEÑANZA-APRENDIZAJE
+    $mN = new EADirector();
+    return $mN->menu();
+}
+
+if ($variable == 12) { //MENU PARA DIRECTOR/FORMACIÓN-SEGUIMIENTO-ESTUDIANTE
+    $mN = new SeguimientoEstudianteDirector();
+    return $mN->menu();
+}
+
+if ($variable == 13) { //MENU PARA DIRECTOR/FORMACIÓN-ACTIVIDADES-EXTRACURRICULARES
+    $mN = new ActividadesExtracurricularesDirector();
+    return $mN->menu();
+}
+
+if ($variable == 14) { //MENU PARA DIRECTOR/FORMACIÓN-SEGUIMIENTO-EGRESADO
+    $mN = new SeguimientoEgresadoDirector();
+    return $mN->menu();
+}
+//DECANO
+if ($variable == 15) { //MENU PARA DECANO/FORMACIÓN-PRINCIPAL
+    $mN = new FormacionDecanoPrincipal();
+    return $mN->menu();
+}
+if ($variable == 16) { //MENU PARA DECANO/FORMACIÓN-SEGUIMIENTO-EGRESADO
+    $mN = new SeguimientoEgresadoDecano();
+    return $mN->menu();
+}
+//REGISTROS ACADEMICOS
+if ($variable == 17) { //MENU PARA REGISTROS ACADEMICOS/FORMACIÓN-PRINCIPAL
+    $mN = new FormacionRegistrosAcademicosPrin();
+    return $mN->menu();
+}
+
+if ($variable == 18) { //MENU PARA REGISTROS ACADEMICOS/EseñanzaAprendizaje
+    $mN = new EARegistrosAcademicos();
+    return $mN->menu();
+}
+
+if ($variable == 19) { //MENU PARA REGISTROS ACADEMICOS/SeguimientoEgresado
+    $mN = new SeguimientoEgresadoRegAc();
+    return $mN->menu();
+}
+//ADMISION
+if ($variable == 20) { //MENU PARA ADMISION/FORMACION-PRINCIPAL
+    $mN = new FormacionAdmision();
+    return $mN->menu();
+} 
+if ($variable == 21) { //MENU PARA ADMISION/Nivelacion-PRINCIPAL
+    $mN = new NivelacionAdmision();
+    return $mN->menu();
+} 
+//DOCENTE
+if ($variable == 22) { //MENU PARA DOCENTE/FORMACION-PRINCIPAL
+    $mN = new DocentePrincipal();
+    return $mN->menu();
+} 
+
+if ($variable == 23) { //MENU PARA DOCENTE/EnseñanzaAprendizaje-PRINCIPAL
+    $mN = new EADocente();
+    return $mN->menu();
+} 
+//DOCENTE-TUTOR
+if ($variable == 24) { //MENU PARA DOCENTETUTOR
+    $mN = new DocenteTutorPrincipal();   
+    return $mN->menu();
+} 
+
+if ($variable == 25) { //MENU PARA DOCENTETUTOR/Seguimiento-Estudiante
+    $mN = new SEsDocenteTutor();   
+    return $mN->menu();
+} 
+//PSICOPEDAGOGIA
+if ($variable == 26) { //MENU PARA PSICOPEDAGOGIA/
+    $mN = new PsicopedagogiaPrincipal();   
+    return $mN->menu();
+} 
+
+if ($variable == 27) { //MENU PARA PSICOPEDAGOGIA/Seguimiento-Estudiante
+    $mN = new SEPsicopedagogia();   
+    return $mN->menu();
+} 
+//Relaciones Internacionales
+if ($variable == 28) { //MENU PARA Relaciones Internacionales
+    $mN = new RIPrincipal();   
+    return $mN->menu();
+} 
+
+if ($variable == 29) { //RelacionesInternacionales/MovilidadAcademica
+    $mN = new RelInterMovlidadAcademica();   
+    return $mN->menu();
+} 
+
+//Unidad de pedagogia
+if ($variable == 30) { //Unidad de pedagogia
+    $mN = new UnidadPedagogiaPrin();   
+    return $mN->menu();
+} 
+
+if ($variable == 31) { //Unidad de pedagogia//ActividadExtracurricular
+    $mN = new AExUnidadPedagogia();   
+    return $mN->menu();
+} 
+//ATT Seguimiento Egresado
+if ($variable == 32) { //Principal AttSeguimientoEgresado 
+    $mN = new PrinAttSE();   
+    return $mN->menu();
+} 
+
+if ($variable == 33) { //Att-SeguimientoEgresado
+    $mN = new AttSeguimientoEgresado();
+    return $mN->menu();
+} 
+
+if ($variable == 0) { //CARGAR MENU DASHBOARD FORMACION
     return [
 
         /*
@@ -35,7 +192,7 @@ if (!isset($variable)) { //CARGAR MENU DASHBOARD FORMACION
     */
 
         'title' => '',
-        'title_prefix' => 'MURIO CUIDADO | ',
+        'title_prefix' => 'DashBoard | ',
         'title_postfix' => '',
 
         /*
@@ -246,8 +403,8 @@ if (!isset($variable)) { //CARGAR MENU DASHBOARD FORMACION
         'menu' => [
             [
                 'text' => 'search',
-                'search' => true,
-                'topnav' => true,
+                'search' => false,
+                'topnav' => false,
             ],
 
             [
@@ -325,7 +482,7 @@ if (!isset($variable)) { //CARGAR MENU DASHBOARD FORMACION
         ],
         ['header' => 'labels',        
         'can'    => 'Decano'],
-        'header' => 'labels',]*/
+        'header' => 'labels',]*//*
 
             [
                 'text'       => 'Reportes',
@@ -363,38 +520,25 @@ if (!isset($variable)) { //CARGAR MENU DASHBOARD FORMACION
                 'icon'       => 'fas fa-file-alt',
                 'url'        => '/dashboard/Documentacion',
                 'can'        => 'dashboard'
+            ],*/
+            [
+                'text'       => 'Accesos Directos',
+                'icon'       => 'fas fa-mouse-pointer',
+                'url'        => '/dashboard',
+                'can'        => 'dashboardFormacion'
             ],
             [
-                'text'       => 'Indicadores',
-                'icon'       => 'fas fa-list-alt',
-                'url'        => '/dashboard/Indicadores',
-                'can'        => 'dashboard'
+                'text'       => 'Gestor de Normas',
+                'icon'       => 'fas fa-book',
+                'url'        => '/dashboard/gestionNorma',
+                'can'        => 'dashboardFormacion'
             ],
             [
-                'text'       => 'Principal',
-                'icon'       => 'fas fa-file-alt',
-                'url'        => '#',
-                'can'        => 'dashboard.NivelacionPrincipal'
+                'text'       => 'Gestionar Usuarios',
+                'icon'       => 'fas fa-users',
+                'url'        => 'Usuarios',
+                'can'        => 'dashboardFormacion'
             ],
-            [
-                'text'       => 'Planeación',
-                'icon'       => 'fas fa-file-alt',
-                'url'        => '#',
-                'can'        => 'dashboard.NivelacionPrincipal'
-            ],
-            [
-                'text'       => 'Ejecución',
-                'icon'       => 'fas fa-file-alt',
-                'url'        => '#',
-                'can'        => 'dashboard.NivelacionPrincipal'
-            ],
-            [
-                'text'       => 'Evaluación',
-                'icon'       => 'fas fa-file-alt',
-                'url'        => '#',
-                'can'        => 'dashboard.NivelacionPrincipal'
-            ],
-
         ],
 
         /*

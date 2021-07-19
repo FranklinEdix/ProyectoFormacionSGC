@@ -3,178 +3,196 @@
 @section('title', 'Admin')
 
 @section('content_header')
-<div class="d-flex">
-    <div class="w-100">
-        <div id="content">
-            <section>
-            <div class="container">
-                <div class="row">
-                <div class="col-lg-12">
-                    <h1>FORMACIÓN</h1>
-                    <p class="parraf_formacion">Este proceso se aplica para Gestionar la nivelación de ingresantes, el desarrollo de la enseñanza-aprendizaje
-                                                articulándolo con la investigación, desarrollo tecnológico, innovación y responsabilidad
-                                                social, brindando seguimiento a estudiantes, fortaleciéndolo con el intercambio de
-                                                experiencias nacionales e internacionales y actividades extracurriculares, con el
-                                                propósito de lograr el perfil del egresado y el perfil profesional, en cumplimiento a los
-                                                plazos y términos establecidos por los órganos competentes acorde a la normatividad
-                                                vigente.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 @stop
 
-@section('content')
-
-                {{--<div class="col-lg-1" id="IconFormacion">
-                    <img src="img/capacitacion.png" alt="" width="130" height="130">
-                </div>--}}
-                </div>
-            </div>
-            </section>
-                <!-- las targetas como opciones --->
-            <section>
-            <div class="container text-center c-center">
-                <div class="row" id="containerCards">
-                <div class="col-sm-2" id="tamaño-cards">
-                    <div class="card mb-4 margen" style="max-width: 14rem;" id="trageta-1">
-                    <div class="card-header text-center" id="targetas">Nivelación
-                        </div>
-                            <div class="card-body">
-                                <h4 class="card-title"><?php echo(30)?>%</h4>
-                                <div class="progress tamaño" >
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo(30)?>%;"></div>
-                                </div>
-                                <div>
-                            </div>                                    
-                        </div>
-                        <div class="ver_mas card-footer">
-                        <a href="dashboard/Nivelacion/Principal?variable=2" id="verMas" class="color" >Ver más <img  class="card__image icon_card icon-right"  src="https://image.flaticon.com/icons/png/512/189/189689.png" width="24" height="24" ></img></a>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-sm-2" id="tamaño-cards">
-                    <div class="card mb-4 margen " style="max-width: 14rem;" id="trageta-1">
-                    <div class="card-header text-center" id="targetas">Enseñanza Aprendizaje
-                        </div>
-                            <div class="card-body">
-                                <h4 class="card-title"><?php echo(30)?>%</h4>
-                                <div class="progress tamaño" >
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo(30)?>%;"></div>
-                                </div>
-                                <div>
-                            </div>                                    
-                        </div>
-                        <div class="ver_mas card-footer">
-                         <a href="dashboard/Nivelacion/Ense-Aprendizaje" id="verMas" class="color" >Ver más <img  class="card__image icon_card icon-right"  src="https://image.flaticon.com/icons/png/512/189/189689.png" width="24" height="24" ></img></a>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-sm-2" id="tamaño-cards">
-                    <div class="card mb-4 margen " style="max-width: 14rem;" id="trageta-1">
-                    <div class="card-header text-center" id="targetas">Seguimiento Estudiante
-                        </div>
-                            <div class="card-body">
-                                <h4 class="card-title"><?php echo(30)?>%</h4>
-                                <div class="progress tamaño" >
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo(30)?>%;"></div>
-                                </div>
-                                <div>
-                            </div>                                    
-                        </div>
-                        <div class="ver_mas card-footer">
-                        Ver más <a href="#" class="color" ><img  class="card__image icon_card icon-right"  src="https://image.flaticon.com/icons/png/512/189/189689.png" width="24" height="24" ></img></a>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-sm-2" id="tamaño-cards">
-                    <div class="card mb-4 margen " style="max-width: 14rem;" id="trageta-1">
-                    <div class="card-header text-center" id="targetas">Movilidad Académica
-                        </div>
-                            <div class="card-body">
-                                <h4 class="card-title"><?php echo(30)?>%</h4>
-                                <div class="progress tamaño" >
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo(30)?>%;"></div>
-                                </div>
-                                <div>
-                            </div>                                    
-                        </div>
-                        <div class="ver_mas card-footer">
-                        Ver más <a href="#" class="color" ><img  class="card__image icon_card icon-right"  src="https://image.flaticon.com/icons/png/512/189/189689.png" width="24" height="24" ></img></a>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-sm-2" id="tamaño-cards">
-                    <div class="card mb-4 margen " style="max-width: 14rem;" id="trageta-1">
-                    <div class="card-header text-center" id="targetas">Actividades Extracurriculares
-                        </div>
-                            <div class="card-body">
-                                <h4 class="card-title"><?php echo(30)?>%</h4>
-                                <div class="progress tamaño" >
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo(30)?>%;"></div>
-                                </div>
-                                <div>
-                            </div>                                    
-                        </div>
-                        <div class="ver_mas card-footer">
-                        Ver más <a href="#" class="color" ><img  class="card__image icon_card icon-right"  src="https://image.flaticon.com/icons/png/512/189/189689.png" width="24" height="24" ></img></a>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-sm-2" id="tamaño-cards">
-                    <div class="card mb-4 margen " style="max-width: 14rem;" id="trageta-1">
-                    <div class="card-header text-center" id="targetas">Seguimiento Egresados
-                        </div>
-                            <div class="card-body">
-                                <h4 class="card-title"><?php echo(30)?>%</h4>
-                                <div class="progress tamaño" >
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo(30)?>%;"></div>
-                                </div>
-                                <div>
-                            </div>                                    
-                        </div>
-                        <div class="ver_mas card-footer">
-                        Ver más <a href="#" class="color" ><img  class="card__image icon_card icon-right"  src="https://image.flaticon.com/icons/png/512/189/189689.png" width="24" height="24" ></img></a>
-                        </div>
-                    </div>
-                    </div>                
-                </div>
-                </div>
-            </div>
-            </section>
-            <section>
-                <div class="container div_container" id="graficos">
-                    <h4 class="bg"> &nbsp;Reporte General del Macroproceso Formación</h4>
-                    <a href=""><h8>Ver la resolución de la comisión y comisión de apoyo</h8></a>
-                    <div class="row">
-                        <div class="col-lg-5" id="barras">
-                            <canvas id="myChart" width="400" height="400"></canvas>
-                        </div>
-                        <div class="col-lg-5" id="pastel">
-                            <canvas id="myChart1" width="400" height="400"></canvas>
-                        </div>                 
-                    </div>
-                
-                    <div class="container" id="BotPdfReport">
-                        <div class="" id="pdfReporteGeneral">
-                            <button class="btn btn-success" ><i class="fas fa-file-pdf"></i> Ver reporte General</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
+@section('content') 
+<div id="content">
+    <section>
+      <div class="container" id="AccesosDirectos">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="tit_acc_direct">Accesos directos</h2>
+            <br>
+          </div>
         </div>
+        <div class="row" >
+            <div class="col-lg-2" title="Ingresar a Gestión de calidad">
+                <center>
+                <button id="BotonAcceso" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
+                        <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
+                      </svg>
+                </button>
+                <h5>Gestión de calidad</h5>
+                </center>
+            </div>
+            <div class="col-lg-2" title="Ingresar a Formación">
+                <center>
+                <a href="{{ url('/dashboardFormacion?variable=1') }}">
+                <button id="BotonAcceso">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
+                        <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
+                      </svg>
+                </button>
+                </a>
+                <h5>Formación</h5>
+                </center>
+            </div>
+            <div class="col-lg-2">
+                <center>
+                <button id="BotonAcceso">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
+                        <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
+                      </svg>
+                </button>
+                <h5>Gestión curricular</h5>
+                </center>
+            </div>
+            <div class="col-lg-2">
+                <center>
+                <button id="BotonAcceso">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
+                        <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
+                      </svg>
+                </button>
+                <h5>Gestión docente</h5>
+                </center>
+            </div>
+            <div class="col-lg-2">
+                <center>
+                <button id="BotonAcceso"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
+                        <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
+                      </svg>
+                    </button>
+                <h5>I+D+i</h5>
+                </center></div>
+
+            <div class="col-lg-2">
+                <center>
+                <button id="BotonAcceso"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
+                        <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
+                      </svg>
+                    </button>
+                <h5>RSU</h5>
+                </center></div>
+
+            <div class="col-lg-2">
+                <center>
+                <button id="BotonAcceso"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
+                        <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
+                      </svg>
+                    </button>
+                <h5>Graduación y titulación</h5>
+                </center></div>
+
+            <div class="col-lg-2">
+                <center>
+                <button id="BotonAcceso"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
+                        <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
+                      </svg>
+                    </button>
+                <h5>Admisión</h5>
+                </center></div>
+
+            <div class="col-lg-2">
+                <center>
+                <button id="BotonAcceso"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
+                        <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
+                      </svg>
+                    </button>
+                <h5>Recursos Humanos</h5>
+                </center></div>
+
+            <div class="col-lg-2">
+                <center>
+                <button id="BotonAcceso"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
+                        <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
+                      </svg>
+                    </button>
+                <h5>Bienestar universitario</h5>
+                </center></div>
+
+            <div class="col-lg-2">
+                <center>
+                <button id="BotonAcceso"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
+                        <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
+                      </svg>
+                    </button>
+                <h5>Infraestructura equipamiento</h5>
+                </center></div>
+
+            <div class="col-lg-2">
+                <center>
+                <button id="BotonAcceso">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
+                        <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
+                      </svg>
+                </button>
+                <h5>TIC</h5>
+                </center>
+            </div>
+            <div class="col-lg-2">
+                <center>
+                <button id="BotonAcceso">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
+                        <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
+                      </svg>
+                </button>
+                <h5>Gectión CRAI</h5>
+                </center>
+            </div>
+            <div class="col-lg-2">
+                <center>
+                <button id="BotonAcceso">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
+                        <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
+                      </svg>
+                </button>
+                <h5>Self appraisal</h5>
+                </center>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    {{--
+    <section>
+      <div class="container ConNormas "  id="AccesosDirectos">
+        <div  id="AccesoNormas"  >
+             <div class="contenidoNorma" >
+      
+              <a href="{{ url('/dashboard/gestionNorma') }}">
+                <button id="BotonAcceso">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
+                        <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
+                      </svg>
+                </button>
+              </a>
+              </div>
+              <div class="contenidoNorma" >
+              <h5>&nbsp;Gestor de Normas</h5>
+              </div>
+        </div>
+      </div>
+        
+    </section>--}}
     </div>
 </div>
+
+
 @stop
 
 @section('css')
 <link rel="stylesheet" href="/css/fondos_bordes.css">
+    <link rel="stylesheet" href="/css/dashboar_Principal.css">
     <link rel="stylesheet" href="/css/admin_custom.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/dashboard.css">
 @stop
 
 @section('js')

@@ -78,6 +78,33 @@ class User extends Authenticatable
         if(auth()->user() -> Id_Rol=='3'){
             return 'DECANO DE ...';
         }
+        if(auth()->user() -> Id_Rol=='4'){
+            return 'REGISTROS ACADEMICOS';
+        }
+        if(auth()->user() -> Id_Rol=='5'){
+            return 'ADMISION';
+        }
+        if(auth()->user() -> Id_Rol=='6'){
+            return 'DOCENTE DE...';
+        }
+        if(auth()->user() -> Id_Rol=='7'){
+            return 'DOCENTE TUTOR DE...';
+        }
+        if(auth()->user() -> Id_Rol=='8'){
+            return 'DIRECTOR UNIDAD DE PSICOPEDAGOGIA';
+        }
+        if(auth()->user() -> Id_Rol=='9'){
+            return 'RELACIONES INTERNACIONALES';
+        }
+        if(auth()->user() -> Id_Rol=='10'){
+            return 'UNIDAD DE PEDAGOGIA';
+        }
+        if(auth()->user() -> Id_Rol=='11'){
+            return 'ATT SEGUIMIENTO EGRESADO';
+        }
+        if(auth()->user() -> Id_Rol=='12'){
+            return 'VIRRECTORADO ACADEMICO';
+        }
         return '? FALTAN DATOS';
     }
 }

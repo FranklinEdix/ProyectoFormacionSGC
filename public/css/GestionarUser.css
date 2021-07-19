@@ -1,0 +1,53 @@
+.tituloGestorUsers{
+    margin-top: -40px;
+    padding: 10px;
+}
+
+.tituloGestorUsers h1{
+    margin-left: 250px;
+    color: black;
+    font-weight: bold;
+}
+
+#v-pills-tab{
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    margin: -87px 0px 0px 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px #000;
+}
+
+#v-pills-tab a{
+    border: 2px;
+    transition: 500ms;
+}
+
+#v-pills-tab a:hover{
+    background-color: var(--primary);
+    color: #fff;
+}
+
+#NombreRol_1,
+#NombreRol_2,
+#NombreRol_3,
+#NombreRol_4,
+#NombreRol_5,
+#NombreRol_6,
+#NombreRol_7,
+#NombreRol_8,
+#NombreRol_9,
+#NombreRol_10,
+#NombreRol_11,
+#NombreRol_12{
+    margin-top: -15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: cadetblue;
+    color: black;
+}
+
+#normasTable .thead-dark{
+    border-radius: 10px;
+}
+

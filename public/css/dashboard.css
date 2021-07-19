@@ -1,0 +1,32 @@
+
+#BotonAcceso {
+   
+    border-color: #707070;
+    border-radius: 8px;
+    color: #707070;
+  } 
+  #BotonAcceso:before {
+    height: 0%;
+    width: 2px;
+  }
+  #BotonAcceso:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+inset -4px -4px 6px 0 rgba(255,255,255,.2),
+inset 4px 4px 6px 0 rgba(73, 73, 73, 0.4);
+  }
+
+#AccesosDirectos h2 {
+  color:#343a40;
+}
+
+
+#AccesosDirectos{
+    color: rgb(70, 70, 70);
+}
+
+#BotonAcceso:hover {
+    background-color: var(--primary);
+    color: var(--light);
+}
+
